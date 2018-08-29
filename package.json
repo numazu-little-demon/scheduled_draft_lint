@@ -1,0 +1,32 @@
+{
+  "name": "scheduled_draft_lint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pull": "ts-node --type-check scripts/pull.ts",
+    "lint": "textlint .draft",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/numazu-little-demon/scheduled_draft_lint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/numazu-little-demon/scheduled_draft_lint/issues"
+  },
+  "homepage": "https://github.com/numazu-little-demon/scheduled_draft_lint#readme",
+  "devDependencies": {
+    "@types/mkdirp": "^0.5.2",
+    "@types/node": "^10.9.3",
+    "googleapis": "^33.0.0",
+    "mkdirp": "^0.5.1",
+    "textlint": "^11.0.0",
+    "textlint-rule-general-novel-style-ja": "^1.3.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  }
+}
