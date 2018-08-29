@@ -5,7 +5,8 @@ import path from 'path'
 
 const thisTime = "name='C94'"
 
-const {installed: {client_id, client_secret, redirect_uris}} = require('../credentials.json')
+const credentials = process.env.GOOGLE_API_CREDENTIALS ? JSON.parse(process.env.GOOGLE_API_CREDENTIALS) : require('../credentials.json')
+const {installed: {client_id, client_secret, redirect_uris}} = credentials
 const oAuth2Client = new google.auth.OAuth2(client_id, client_secret, redirect_uris[0])
 
 const token = process.env.GOOGLE_API_TOKEN ? JSON.parse(process.env.GOOGLE_API_TOKEN) : require('../token.json')
