@@ -21,7 +21,7 @@
   "homepage": "https://github.com/numazu-little-demon/scheduled_draft_lint#readme",
   "devDependencies": {
     "@types/mkdirp": "^0.5.2",
-    "@types/node": "^11.9.0",
+    "@types/node": "^12.12.7",
     "googleapis": "^34.0.0",
     "mkdirp": "^0.5.1",
     "textlint": "^11.0.0",
